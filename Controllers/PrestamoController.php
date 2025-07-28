@@ -20,11 +20,11 @@ class PrestamoController {
 
     public function guardar() {
         $prestamo = new Prestamo(
-            $_POST['id'] ?? null,
             $_POST['id_libro'],
             $_POST['nombre_alumno'],
             $_POST['fecha_prestamo'],
-            $_POST['fecha_devolucion']
+            $_POST['fecha_devolucion'],
+            $_POST['id'] ?? null
         );
         if ($prestamo->guardar()) {
             header('Location: index.php?controller=prestamo&action=index');

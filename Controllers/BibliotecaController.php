@@ -20,11 +20,11 @@ class BibliotecaController {
 
     public function save() {
         $libro = new Biblioteca(
-            $_POST['id'] ?? null,
             $_POST['titulo'],
             $_POST['autor'],
             $_POST['anio'],
-            $_POST['genero']
+            $_POST['genero'],
+            $_POST['id'] ?? null
         );
         if ($libro->save()) {
             header('Location: index.php?controller=biblioteca&action=index');

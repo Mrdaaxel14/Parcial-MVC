@@ -6,7 +6,7 @@ class Prestamo {
     private $fecha_prestamo;
     private $fecha_devolucion;
 
-    public function __construct($id = null, $id_libro, $nombre_alumno, $fecha_prestamo, $fecha_devolucion) {
+    public function __construct($id_libro, $nombre_alumno, $fecha_prestamo, $fecha_devolucion, $id = null) {
         $this->id = $id;
         $this->id_libro = $id_libro;
         $this->nombre_alumno = $nombre_alumno;

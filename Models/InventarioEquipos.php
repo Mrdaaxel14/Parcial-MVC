@@ -5,7 +5,7 @@ class Equipo {
     private $cantidad;
     private $estado;
 
-    public function __construct($id = null, $nombre_equipo, $cantidad, $estado) {
+    public function __construct($nombre_equipo, $cantidad, $estado, $id = null) {
         $this->id = $id;
         $this->nombre_equipo = $nombre_equipo;
         $this->cantidad = $cantidad;

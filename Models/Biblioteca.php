@@ -6,7 +6,7 @@ class Biblioteca {
     private $anio;
     private $genero;
 
-    public function __construct($id = null, $titulo, $autor, $anio, $genero) {
+    public function __construct($titulo, $autor, $anio, $genero, $id = null) {
         $this->id = $id;
         $this->titulo = $titulo;
         $this->autor = $autor;

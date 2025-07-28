@@ -20,10 +20,10 @@ class EquipoController {
 
     public function save() {
         $equipo = new Equipo(
-            $_POST['id'] ?? null,
             $_POST['nombre_equipo'],
             $_POST['cantidad'],
-            $_POST['estado']
+            $_POST['estado'],
+            $_POST['id'] ?? null
         );
         if ($equipo->save()) {
             header('Location: index.php?controller=equipo&action=index');
